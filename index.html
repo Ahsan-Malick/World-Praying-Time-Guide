@@ -366,7 +366,7 @@
         const year = document.getElementById("year").value;
         const prayerBg = document.getElementById("prayer")
         const prayerData = await fetch(
-          `http://api.aladhan.com/v1/calendarByCity/${year}/${month}?city=${city}&country=${country}&method=${method}`
+          `https://api.aladhan.com/v1/calendarByCity/${year}/${month}?city=${city}&country=${country}&method=${method}`
         ).then((response) => response.json());
         const time = document.getElementById("prayerTimes");
         const data = prayerData.data;
